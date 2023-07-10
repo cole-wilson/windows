@@ -74,6 +74,15 @@ function update() {
 	ctx.lineTo(STARTX + feetToPixels(50 - options.offset), STARTY + HEIGHT);
 	ctx.stroke();
 
+	// ACTUAL WALLS
+	ctx.strokeStyle = "darkred";
+	ctx.lineWidth = feetToPixels((1/12) * 2);
+
+	// draw end offset
+	ctx.beginPath();
+	ctx.moveTo(STARTX + feetToPixels(50 - 11), STARTY);
+	ctx.lineTo(STARTX + feetToPixels(50 - 11), STARTY + HEIGHT);
+	ctx.stroke();
 
 	// ctx.
 
